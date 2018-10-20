@@ -45,8 +45,13 @@ export class LoginComponent implements OnInit {
     win.once('ready-to-show', () => {
       win.show();
     });
-    const x = await this.provider.perform(win);
-    console.log('login?');
-    console.log(x);
+    this.provider.perform(win)
+      .then((result) => {
+        this.msg = 'Complete: ' + JSON.stringify(result);
+      })
+      .catch((err) => {
+        this.msg = 'Error: ' + err.toString();
+        console.error(err);
+      });
   }
 }
