@@ -1,19 +1,36 @@
 # Zync Desktop
-Desktop client for Zync.
 
-## Installation
-Zync Desktop is still a heavy work in progress, so prebuilt binaries are not
-provided yet. See [Development](#Development) if you'd like to give the client a
-try in its current state.
+## Project setup
+```
+yarn install
+```
 
-## Development
-```bash
-# Clone this project
-git clone https://github.com/Zyncco/desktop.git
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
 
-# Install dependencies
-yarn
+### Compiles and minifies for production
+```
+yarn run build
+```
 
-# Start the client
-yarn run start:electron
+### Run your tests
+```
+yarn run test
+```
+
+### Lints and fixes files
+```
+yarn run lint
+```
+
+### Run your end-to-end tests
+```
+yarn run test:e2e
+```
+
+### Run your unit tests
+```
+yarn run test:unit
 ```
